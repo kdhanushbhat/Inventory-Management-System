@@ -5,6 +5,7 @@ from PyQt5 import QtWidgets,QtCore
 from PyQt5.QtWidgets import QDialog,QApplication,QWidget,QLabel,QTableWidgetItem,QMessageBox
 from PyQt5.QtGui import QPixmap,QIcon
 import mysql.connector
+
 user=passw=''
 database=''
 
@@ -854,4 +855,5 @@ widget.show()
 try:
     sys.exit(app.exec_())
 except:
-    print("exiting")
+    print("exiting asomething")
+    
