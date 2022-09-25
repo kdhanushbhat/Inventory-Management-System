@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>backbtn.png</file>
+    <file>ref_icon.png</file>
+    <file>images.png</file>
+    <file>warehouse-6-blog.jpg</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>LOGO.png</file>
+  </qresource>
+  <qresource/>
+  <qresource prefix="newPrefix">
+    <file>LOGO.png</file>
+  </qresource>
+</RCC>
