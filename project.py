@@ -13,11 +13,11 @@ database=''
 class MainWindow(QWidget):
     def __init__(self):
         super(MainWindow,self).__init__()
-        loadUi("C:\\Users\\rocky\\Desktop\\coding\\project\\ui\\loginMain.ui",self)
+        loadUi("Inventory-Management-System\\ui\\loginMain.ui",self)
         self.setWindowTitle('Inventory Management System')
         self.label_5.resize(1600, 850)
         self.loginBtn.clicked.connect(self.gotologin)
-        self.pxp = QPixmap('C:\\Users\\rocky\\Desktop\\coding\\project\\warehouse-6-blog.jpg')
+        self.pxp = QPixmap('Inventory-Management-System\\warehouse-6-blog.jpg')
         self.label_5.setPixmap(QPixmap(self.pxp))
         self.label_5.setScaledContents(True)
 
@@ -49,9 +49,9 @@ class alertbx:
 class mainOrders(QDialog):
     def __init__(self):
         super(mainOrders,self).__init__()
-        loadUi("C:\\Users\\rocky\\Desktop\\coding\\project\\ui\\MainPageOrd.ui",self)
+        loadUi("Inventory-Management-System\\ui\\MainPageOrd.ui",self)
         self.frame.resize(1600, 850)
-        self.refbtn.setIcon(QIcon('C:\\Users\\rocky\\Desktop\\coding\\project\\ref_icon.png'))
+        self.refbtn.setIcon(QIcon('Inventory-Management-System\\ref_icon.png'))
         self.refbtn.clicked.connect(self.init)
         self.invBtn.clicked.connect(self.gotoinv)
         self.salesBtn.clicked.connect(self.gotosls)
@@ -438,13 +438,13 @@ class mainOrders(QDialog):
 class mainSales(QDialog):
     def __init__(self):
         super(mainSales,self).__init__()
-        loadUi("C:\\Users\\rocky\\Desktop\\coding\\project\\ui\\MainPageSls.ui",self)
-        self.pushButton_4.setIcon(QIcon('C:\\Users\\rocky\\Desktop\\coding\\project\\backbtn.png'))
+        loadUi("Inventory-Management-System\\ui\\MainPageSls.ui",self)
+        self.pushButton_4.setIcon(QIcon('Inventory-Management-System\\backbtn.png'))
         self.orderBtn.clicked.connect(self.gotoordr)
         self.invBtn.clicked.connect(self.gotoinv)
         self.pushButton.clicked.connect(self.showdet)
         self.pushButton_4.clicked.connect(lambda : self.stackedWidget.setCurrentIndex(0))
-        self.pushButton_5.setIcon(QIcon('C:\\Users\\rocky\\Desktop\\coding\\project\\ref_icon.png'))
+        self.pushButton_5.setIcon(QIcon('Inventory-Management-System\\ref_icon.png'))
         self.pushButton_5.clicked.connect(self.laodtable)
         self.laodtable()
     def showdet(self):
@@ -509,10 +509,10 @@ class mainSales(QDialog):
 class maininv(QDialog):
     def __init__(self):
         super(maininv,self).__init__()
-        loadUi("C:\\Users\\rocky\\Desktop\\coding\\project\\ui\\MainPage.ui",self)
+        loadUi("Inventory-Management-System\\ui\\MainPage.ui",self)
         self.frame.resize(1600, 850)
-        self.refbtn.setIcon(QIcon('C:\\Users\\rocky\\Desktop\\coding\\project\\ref_icon.png'))
-        self.pushButton_4.setIcon(QIcon('C:\\Users\\rocky\\Desktop\\coding\\project\\backbtn.png'))
+        self.refbtn.setIcon(QIcon('Inventory-Management-System\\ref_icon.png'))
+        self.pushButton_4.setIcon(QIcon('Inventory-Management-System\\backbtn.png'))
         self.refbtn.clicked.connect(self.typinit)
         self.orderBtn.clicked.connect(self.gotoordr)
         self.salesBtn.clicked.connect(self.gotosls)
@@ -737,9 +737,9 @@ class maininv(QDialog):
 class chseInvn(QDialog):
     def __init__(self):
         super(chseInvn,self).__init__()
-        loadUi("C:\\Users\\rocky\\Desktop\\coding\\project\\ui\\invn.ui",self)
+        loadUi("Inventory-Management-System\\ui\\invn.ui",self)
         self.label_5.resize(1600, 850)
-        self.pxp = QPixmap('C:\\Users\\rocky\\Desktop\\coding\\project\\warehouse-6-blog.jpg')
+        self.pxp = QPixmap('Inventory-Management-System\\warehouse-6-blog.jpg')
         self.label_5.setPixmap(QPixmap(self.pxp))
         self.label_5.setScaledContents(True)
         self.opbtn.clicked.connect(self.gotoop)
@@ -753,9 +753,9 @@ class chseInvn(QDialog):
 class Openinvn(QDialog):
     def __init__(self):
         super(Openinvn,self).__init__()
-        loadUi("C:\\Users\\rocky\\Desktop\\coding\\project\\ui\\openinvn.ui",self)
+        loadUi("Inventory-Management-System\\ui\\openinvn.ui",self)
         self.label_5.resize(1600, 850)
-        self.pxp = QPixmap('C:\\Users\\rocky\\Desktop\\coding\\project\\warehouse-6-blog.jpg')
+        self.pxp = QPixmap('Inventory-Management-System\\warehouse-6-blog.jpg')
         self.label_5.setPixmap(QPixmap(self.pxp))
         self.label_5.setScaledContents(True)
         self.openbtn.clicked.connect(self.gotoinv)
@@ -779,9 +779,9 @@ class Openinvn(QDialog):
 class creatinvn(QDialog):
     def __init__(self):
         super(creatinvn,self).__init__()
-        loadUi("C:\\Users\\rocky\\Desktop\\coding\\project\\ui\\createinvn.ui",self)
+        loadUi("Inventory-Management-System\\ui\\createinvn.ui",self)
         self.label_5.resize(1600, 850)
-        self.pxp = QPixmap('project\\warehouse-6-blog.jpg')
+        self.pxp = QPixmap('Inventory-Management-System\\warehouse-6-blog.jpg')
         self.label_5.setPixmap(QPixmap(self.pxp))
         self.label_5.setScaledContents(True)
         self.openbtn.clicked.connect(self.gotoinv)
